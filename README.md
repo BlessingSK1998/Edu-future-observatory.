@@ -1,3 +1,7 @@
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blessing-edu-future.streamlit.app/)
+
+**[Open the hosted app](https://blessing-edu-future.streamlit.app/)**
+
 # EDU / FUTURE
 
 [Open the public dashboard](https://edu-future-blessing-observatory.pearlypanda9.chatgpt.site)
