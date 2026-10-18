@@ -1,0 +1,27 @@
+{
+  "retrieved_date": "2026-10-17",
+  "world_bank_last_updated": "2026-10-08",
+  "dataset": "Original project CSV, retained without changing values",
+  "sources": {
+    "education_expenditure_pct_gdp": {
+      "indicator": "SE.XPD.TOTL.GD.ZS",
+      "label": "Education spending \u00b7 % GDP",
+      "url": "https://api.worldbank.org/v2/country/DEU;ZWE;ZAF;BWA;GHA;NGA;KEN;GBR;USA;IND/indicator/SE.XPD.TOTL.GD.ZS?format=json&date=2010:2023&per_page=20000&source=2"
+    },
+    "tertiary_enrolment_pct_gross": {
+      "indicator": "SE.TER.ENRR",
+      "label": "Tertiary enrolment \u00b7 gross %",
+      "url": "https://api.worldbank.org/v2/country/DEU;ZWE;ZAF;BWA;GHA;NGA;KEN;GBR;USA;IND/indicator/SE.TER.ENRR?format=json&date=2010:2023&per_page=20000&source=2"
+    },
+    "youth_unemployment_pct": {
+      "indicator": "SL.UEM.1524.ZS",
+      "label": "Youth unemployment \u00b7 %",
+      "url": "https://api.worldbank.org/v2/country/DEU;ZWE;ZAF;BWA;GHA;NGA;KEN;GBR;USA;IND/indicator/SL.UEM.1524.ZS?format=json&date=2010:2023&per_page=20000&source=2"
+    },
+    "gdp_per_capita_ppp_constant_2021_intl_dollars": {
+      "indicator": "NY.GDP.PCAP.PP.KD",
+      "label": "GDP per capita \u00b7 PPP 2021 $",
+      "url": "https://api.worldbank.org/v2/country/DEU;ZWE;ZAF;BWA;GHA;NGA;KEN;GBR;USA;IND/indicator/NY.GDP.PCAP.PP.KD?format=json&date=2010:2023&per_page=20000&source=2"
+    }
+  }
+}
