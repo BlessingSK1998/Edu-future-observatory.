@@ -27,6 +27,9 @@ def script(name):
 def dashboard():
     page = (WEB / "index.html").read_text(encoding="utf-8")
     scripts = []
+    geo = WEB / "geo/world_110m.json"
+    if geo.exists():
+        scripts.append("<script>window.PlotlyGeoAssets={topojson:{world_110m:" + geo.read_text(encoding="utf-8").replace("</script", "<\\/script") + "}};</script>")
     def add_script(match):
         name = match[1]
         if name.startswith(("http:", "https:")):
