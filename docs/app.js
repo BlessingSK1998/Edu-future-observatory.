@@ -8,7 +8,7 @@ const el=id=>document.getElementById(id),fmt=v=>A.valid(v)?v.toLocaleString('en'
 const opt=(value,label)=>{let o=document.createElement('option');o.value=value;o.textContent=label;return o;};
 const label=k=>labels[keys.indexOf(k)];
 let state;
-const base={paper_bgcolor:'#111b2b',plot_bgcolor:'#111b2b',font:{family:'Inter, Arial, sans-serif',color:'#afc0d6',size:11},margin:{l:55,r:25,t:30,b:70},autosize:true,xaxis:{gridcolor:'#253449',zeroline:false},yaxis:{gridcolor:'#253449',zeroline:false},legend:{orientation:'h',y:-.2},colorway:colors};
+const base={paper_bgcolor:'rgba(0,0,0,0)',plot_bgcolor:'rgba(0,0,0,0)',font:{family:'-apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, sans-serif',color:'#c3d0e2',size:11},margin:{l:55,r:25,t:30,b:70},autosize:true,xaxis:{gridcolor:'rgba(255,255,255,.1)',zeroline:false},yaxis:{gridcolor:'rgba(255,255,255,.1)',zeroline:false},legend:{orientation:'h',y:-.2},colorway:colors};
 const config={responsive:true,displaylogo:false,modeBarButtonsToRemove:['select2d','lasso2d'],topojsonURL:'./geo/'};
 function plot(id,traces,layout={}){return Plotly.react(id,traces,{...base,...layout},config);}
 function blank(id,message){plot(id,[],{annotations:[{text:message,x:.5,y:.5,xref:'paper',yref:'paper',showarrow:false}],xaxis:{visible:false},yaxis:{visible:false}});}
